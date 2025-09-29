@@ -1,22 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Our Services - Open Hands Foundation</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="contact.html">COONTANCT</a></li>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Open Hands Foundation</div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>WELCOM TO MY NPO</h1>
+  <main class="main-content">
+    <!-- Intro -->
+    <section class="services-intro">
+      <h1 class="services-title">Our Services</h1>
+      <p class="services-text">
+        Open Hands Foundation serves communities across South Africa. We focus on food relief, education support, skills training, and practical help.
+      </p>
+      <p class="services-text services-travel">
+        We travel to different communities — Cape Town, Durban, Eastern Cape, and Gauteng — bringing support directly to the people who need it most.  
+        Our teams run workshops, outreach events, and drives that make a real impact.
+      </p>
+    </section>
+
+    <!-- Core Services -->
+    <section class="services-grid">
+      <div class="service-card">
+        <img src="images/food-relief.jpg" alt="Food parcels" class="service-photo">
+        <h2 class="service-title">Food Relief</h2>
+        <p class="service-text">
+          We provide food parcels, cooked meals, and groceries to families in need.  
+          Our volunteers organize food drives to make sure every child and elder in the community has access to nutritious meals.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/education.jpg" alt="Education support" class="service-photo">
+        <h2 class="service-title">Education Support</h2>
+        <p class="service-text">
+          We support schools and learners by providing books, stationery, after-school programs, and mentorship.  
+          Our goal is to help children stay in school, gain knowledge, and grow confident for the future.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/skills-training.jpg" alt="Skills training" class="service-photo">
+        <h2 class="service-title">Skills Training</h2>
+        <p class="service-text">
+          We run workshops for adults and youth to learn skills like basic computer use, sewing, carpentry, or small business management.  
+          These programs help people earn income and improve their livelihoods.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/health-awareness.jpg" alt="Health awareness" class="service-photo">
+        <h2 class="service-title">Health & Wellness</h2>
+        <p class="service-text">
+          Our teams provide basic health checks, wellness workshops, and health awareness campaigns in under-resourced areas.  
+          We teach families about hygiene, nutrition, and staying healthy.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/community-cleanup.jpg" alt="Community clean-up" class="service-photo">
+        <h2 class="service-title">Community Outreach</h2>
+        <p class="service-text">
+          We organize community clean-ups, awareness campaigns, and support local shelters.  
+          By working together, we help make neighborhoods safer, cleaner, and more welcoming.
+        </p>
+      </div>
+    </section>
+
+    <!-- Get Involved CTA -->
+    <section class="get-involved">
+      <h2 class="section-title">Would you like to volunteer?</h2>
+      <p class="section-text">
+        Join us in making a difference. Your time, skills, and passion can help us reach more people and spread hope across South Africa.
+      </p>
+      <a href="contact.html" class="btn-join">Sign Up to Volunteer</a>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2 class="section-title">Stories from the Communities</h2>
+      <p class="section-text">
+        Here are some personal stories from people we’ve supported:
+      </p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <img src="images/testimonial-sandile.jpg" alt="Sandile" class="testimonial-photo">
+          <h3 class="testimonial-name">Sandile</h3>
+          <p class="testimonial-role">Cape Town</p>
+          <blockquote class="testimonial-quote">
+            "Before Open Hands visited our area, I was struggling to provide for my kids. They brought us food and helped repair our shelter. For the first time in a long while, I feel hope again."
+          </blockquote>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="images/testimonial-andile.jpg" alt="Andile" class="testimonial-photo">
+          <h3 class="testimonial-name">Andile</h3>
+          <p class="testimonial-role">Durban</p>
+          <blockquote class="testimonial-quote">
+            "I joined one of the workshops and learned skills I never thought I could. At the same time, my family received meals that kept us going. It felt like someone finally cared."
+          </blockquote>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="images/testimonial-lwando.jpg" alt="Lwando" class="testimonial-photo">
+          <h3 class="testimonial-name">Lwando</h3>
+          <p class="testimonial-role">Eastern Cape</p>
+          <blockquote class="testimonial-quote">
+            "Open Hands stood with my family during a very hard time. The care and support they gave us made me believe we are not alone, and that better days are possible."
+          </blockquote>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="images/testimonial-thandi.jpg" alt="Thandi" class="testimonial-photo">
+          <h3 class="testimonial-name">Thandi</h3>
+          <p class="testimonial-role">Gauteng</p>
+          <blockquote class="testimonial-quote">
+            "The team came to our township and helped with food, mentoring, and wellness sessions. I learned new skills and feel like I can finally make a difference in my own life."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">&copy; 2025 Open Hands Foundation. Serving South African communities.</p>
+  </footer>
 </body>
 </html>
+

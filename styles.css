@@ -1,0 +1,223 @@
+/* ==============================
+   Base & Reset
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000; /* black background */
+  color: #fff;
+  line-height: 1.6;
+  text-align: center; /* center content by default */
+}
+
+a {
+  text-decoration: none;
+  color: #ff0; /* yellow links */
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #4CAF50; /* green on hover */
+}
+
+/* ==============================
+   Header & Navigation
+============================== */
+.header {
+  background-color: #111;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8em;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-list li a {
+  font-weight: bold;
+  color: #ff0;
+  padding: 5px 10px;
+}
+
+.nav-list li a.active,
+.nav-list li a:hover {
+  color: #4CAF50;
+}
+
+/* ==============================
+   Sections & Cards
+============================== */
+section {
+  padding: 40px 20px;
+}
+
+h1, h2, h3 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Card styles for forms, services, testimonials */
+.card {
+  background-color: #111;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 6px 15px rgba(0, 255, 0, 0.25);
+  text-align: center;
+}
+
+/* ==============================
+   Forms
+============================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #4CAF50;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #4CAF50;
+  font-size: 1em;
+}
+
+input, textarea, select {
+  background-color: #000;
+  color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ff0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff0;
+  color: #000;
+}
+
+/* ==============================
+   Services & Testimonials Grid
+============================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.service-photo,
+.testimonial-photo {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  color: #ff0;
+}
+
+/* ==============================
+   Buttons / CTA
+============================== */
+.btn-join {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ff0;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-join:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* ==============================
+   Footer
+============================== */
+.footer {
+  background-color: #111;
+  color: #ff0;
+  padding: 25px 0;
+  text-align: center;
+}
+
+/* ==============================
+   Responsive Design
+============================== */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 90%;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.3em;
+  }
+
+  button, .btn-join {
+    font-size: 0.95em;
+    padding: 10px 20px;
+  }
+}

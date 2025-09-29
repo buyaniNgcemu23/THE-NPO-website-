@@ -1,22 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>About Us - OpenHands Foundation</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="contact.html">COONTANCT</a></li>
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>WELCOM TO MY NPO</h1>
+  <!-- About Section -->
+  <main class="about">
+    <section class="about-intro">
+      <h1 class="about-title">About OpenHands Foundation</h1>
+      <p class="about-text">
+        OpenHands Foundation is a South African non-profit organisation. 
+        We are here to help people in need and to bring hope to our communities. 
+        Our focus is on simple but powerful actions that can make life better for families and young people.
+      </p>
+    </section>
+
+    <section class="about-mission">
+      <h2 class="section-title">Our Mission</h2>
+      <p class="section-text">
+        Our mission is to support people through education, food relief, and skills development. 
+        We want to give people the tools and chances they need to grow and live a better life.
+      </p>
+    </section>
+
+    <section class="about-values">
+      <h2 class="section-title">Our Values</h2>
+      <ul class="values-list">
+        <li class="value-item">Compassion – We care for people with kindness.</li>
+        <li class="value-item">Honesty – We are open and clear about what we do.</li>
+        <li class="value-item">Community – We believe in working together.</li>
+        <li class="value-item">Change – We want to make life better for others.</li>
+      </ul>
+    </section>
+
+    <!-- Communities Section -->
+    <section class="about-communities">
+      <h2 class="section-title">Communities We Serve</h2>
+      <p class="section-text">
+        We work in different parts of South Africa. Each area has its own needs, 
+        and we try our best to meet those needs through simple but effective programs.
+      </p>
+
+      <div class="community-grid">
+        <div class="community-card">
+          <img src="images/capetown.jpg" alt="Helping families in Cape Town" class="community-photo">
+          <h3 class="community-title">Cape Town</h3>
+          <p class="community-text">
+            We support families in Cape Town by giving food parcels and running programs for young people. 
+            We also create safe spaces where the youth can learn and grow.
+          </p>
+        </div>
+
+        <div class="community-card">
+          <img src="images/durban.jpg" alt="Youth program in Durban" class="community-photo">
+          <h3 class="community-title">Durban</h3>
+          <p class="community-text">
+            In Durban, we run youth programs, community clean-ups, and health awareness campaigns. 
+            We want to give young people hope and purpose through skills training.
+          </p>
+        </div>
+
+        <div class="community-card">
+          <img src="images/easterncape.jpg" alt="Eastern Cape outreach" class="community-photo">
+          <h3 class="community-title">Eastern Cape</h3>
+          <p class="community-text">
+            The Eastern Cape is one of our focus areas for rural development. 
+            We help schools with learning materials, support small farmers, and uplift families in rural areas.
+          </p>
+        </div>
+      </div>
+
+      <div class="community-card">
+        <h3 class="community-title">Gauteng</h3>
+        <p class="community-text">
+          In Gauteng, we focus on helping people find work through skills programs and support shelters for people in need. 
+          We believe that giving people skills is the best way to help them long-term.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer-text">&copy; 2025 OpenHands Foundation. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+

@@ -1,22 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Volunteer Sign-Up - Open Hands Foundation</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="contact.html">COONTANCT</a></li>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Open Hands Foundation</div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.html" class="active">Volunteer Sign-Up</a></li>
       </ul>
     </nav>
   </header>
 
-  <h1>WELCOM TO MY NPO</h1>
+  <main class="signup-page">
+    <section class="signup-card">
+      <h1 class="signup-title">Volunteer Sign-Up</h1>
+      <p class="signup-text">
+        Thank you for your interest in volunteering with Open Hands Foundation.  
+        Please fill out this form and we’ll contact you to get started.
+      </p>
+
+      <form class="signup-form" action="#" method="post">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="City or province" required>
+        </div>
+
+        <div class="form-group">
+          <label for="skills">Skills / Interests</label>
+          <textarea id="skills" name="skills" rows="3" placeholder="Tell us what you can contribute"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="availability">Availability</label>
+          <select id="availability" name="availability" class="availability-select">
+            <option value="">Select availability</option>
+            <option value="weekdays">Weekdays</option>
+            <option value="weekends">Weekends</option>
+            <option value="anytime">Anytime</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Additional Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Anything else you’d like us to know?"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Sign-Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-text">&copy; 2025 Open Hands Foundation. Serving South African communities.</p>
+  </footer>
 </body>
 </html>
+
